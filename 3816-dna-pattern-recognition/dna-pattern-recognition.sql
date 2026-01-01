@@ -27,7 +27,7 @@ SELECT
 
     /* contains at least 3 consecutive G */
     CASE
-        WHEN REGEXP_LIKE(dna_sequence, 'G{3,}') THEN 1
+        WHEN REGEXP_LIKE(dna_sequence, 'G{3}') THEN 1
         ELSE 0
     END AS has_ggg
 
